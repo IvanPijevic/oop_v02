@@ -1,4 +1,5 @@
 #include "app.h"
+#include "iostream"
 
 int main()
 {
@@ -16,5 +17,5 @@ int main()
 	std::cout << "Plava: " << c.get_blue() << std::endl;
 
 	std::cout << "Boja: " << c.get_color_ref() << std::endl;
-	std::cout << "Hexadecimalni: " << c.to_hex(c.get_color_ref());
+	std::cout << "Hexadecimalni: " << vsite::oop::v2::to_hex(c.get_color_ref());
 }

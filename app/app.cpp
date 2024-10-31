@@ -2,12 +2,11 @@
 
 namespace vsite::oop::v2
 {
-	color::color(double red, double green, double blue) 
-	{
-		m_red = red;
-		m_green = green;
-		m_blue = blue;
-	}
+	color::color(double red, double green, double blue) : 
+		m_red(red),
+		m_green(green),
+		m_blue(blue)
+	{}
 
 	double color::get_red() const 
 	{
@@ -49,7 +48,7 @@ namespace vsite::oop::v2
 		return RGB(m_red * 255, m_green * 255, m_blue * 255);
 	}
 
-	std::string color::to_hex(int broj)
+	std::string to_hex(int broj)
 	{
 		return std::format("{:X}", broj);
 	}
